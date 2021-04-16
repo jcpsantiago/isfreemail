@@ -11,7 +11,7 @@
 is_valid_email <- function(email) {
   # W3C validation as of 2021-04-16
   grepl(
-    "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$",
+    "^[äüöa-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[äüöa-zA-Z0-9-]+(?:\\.[äüöa-zA-Z0-9-]+)*$",
     email
   )
 }

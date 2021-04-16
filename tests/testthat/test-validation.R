@@ -1,5 +1,6 @@
 test_that("validation works", {
   expect_true(is_valid_email("picard@starfleet.ufp"))
+  expect_true(is_valid_email("this@mühle.de"))
 })
 
 test_that("extracting domain works", {
