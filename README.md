@@ -4,7 +4,7 @@ R package to check if an email is from a provider offering free or burner accoun
 Burner email data comes from https://github.com/wesbos/burner-email-providers.
 
 ## Usage
-The workhorse is `is_free_email`:
+The workhorses are `is_free_email` and `is_burner_email`:
 ```r
 is_free_email("foo@gmail.com") # TRUE
 is_free_email("foo@cuvox.de") # TRUE
