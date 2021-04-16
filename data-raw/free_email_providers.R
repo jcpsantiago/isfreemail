@@ -8,7 +8,7 @@ free_email_providers_domains <- c(
   "mailbox.org", "posteo.de", "t-online.de", "hotmail.com", "hotmail.de", "aim.com", "googlemail.com",
   "tuta.io", "protonmail.com", "online.de", "email.de", "mein.gmx",
   "wp.pl", "yopmail.com", "vodafonemail.de", "tutanota.com", "skymail.de",
-  "bizz.de", "gmx-topmail.de", "maills.de", "magenta.de", "bossmail.de"
+  "bizz.de", "gmx-topmail.de", "maills.de", "magenta.de", "bossmail.de", "emailn.de"
 )
 
 free_emails <- data.frame(
