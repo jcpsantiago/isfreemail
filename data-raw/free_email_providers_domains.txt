@@ -2,6 +2,7 @@ aim.com
 aol.com
 aol.de
 bizz.de
+bk.ru
 bossmail.de
 email.de
 emailn.de
@@ -15,11 +16,16 @@ gmx.de
 gmx.net
 gmx.org
 googlemail.com
+hey.com
 hotmail.com
 hotmail.de
 icloud.com
+inbox.ru
+list.ru
+live.com
 magenta.de
 mail.de
+mail.ru
 mailbox.org
 maills.de
 mein.gmx
@@ -39,6 +45,8 @@ web.de
 wp.pl
 yahoo.com
 yahoo.de
+yandex.mail
+yandex.ru
 yopmail.com
 zoho.com
 zoho.de
