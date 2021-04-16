@@ -41,6 +41,7 @@ yahoo.com
 yahoo.de
 yopmail.com
 zoho.com
+zoho.de
 zohomail.com
 zohomail.de
 zohomail.eu

@@ -4,7 +4,7 @@
 #   )
 
 free_email_providers_domains <- c(
-  "gmail.com", "zohomail.eu", "zohomail.de", "zohomail.com", "zoho.com", "gmx.de", "gmx.biz", "gmx.org", "gmx.net", "firemail.eu", "firemail.de", "ok.de", "vip-client.de", "outlook.de", "outlook.com", "web.de", "mail.de", "yahoo.de", "yahoo.com", "aol.com", "aol.de", "icloud.com", "freenet.de",
+  "gmail.com", "zohomail.eu", "zohomail.de", "zohomail.com", "zoho.com", "zoho.de", "gmx.de", "gmx.biz", "gmx.org", "gmx.net", "firemail.eu", "firemail.de", "ok.de", "vip-client.de", "outlook.de", "outlook.com", "web.de", "mail.de", "yahoo.de", "yahoo.com", "aol.com", "aol.de", "icloud.com", "freenet.de",
   "mailbox.org", "posteo.de", "t-online.de", "hotmail.com", "hotmail.de", "aim.com", "googlemail.com",
   "tuta.io", "protonmail.com", "online.de", "email.de", "mein.gmx",
   "wp.pl", "yopmail.com", "vodafonemail.de", "tutanota.com", "skymail.de",
