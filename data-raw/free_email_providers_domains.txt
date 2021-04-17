@@ -184,6 +184,16 @@ doramail.com
 dr.com
 dublin.com
 dutchmail.com
+eclipso.at
+eclipso.be
+eclipso.ch
+eclipso.de
+eclipso.email
+eclipso.es
+eclipso.eu
+eclipso.it
+eclipso.me
+eclipso.nl
 elvisfan.com
 email.com
 email.de
