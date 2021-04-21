@@ -9,7 +9,15 @@ free_email_providers_domains <- readLines(
   here::here("data-raw/free_email_providers_domains.txt")
 )
 
-free_providers <- unique(c(arnt_freemail, free_email_providers_domains))
+# These are not necessarily offering email accounts explicitly in their
+# webpage, but they were used in illegal activities
+shady_domains <- c(
+  "zuzo.de", "rakers.net", "boou.de"
+)
+
+free_providers <- unique(
+  c(arnt_freemail, free_email_providers_domains, shady_domains)
+  )
 
 free_emails <- data.frame(
   type = "free non-burner",
