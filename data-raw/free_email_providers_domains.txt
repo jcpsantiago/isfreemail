@@ -414,6 +414,7 @@ humanoid.net
 icloud.com
 iname.com
 inbox.ru
+info.de
 innocent.com
 inorbit.com
 instruction.com
@@ -1035,6 +1036,7 @@ ymail.sg
 yopmail.com
 zoho.com
 zoho.de
+zoho.eu
 zohomail.com
 zohomail.de
 zohomail.eu
