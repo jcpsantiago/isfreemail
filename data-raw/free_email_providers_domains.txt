@@ -135,6 +135,7 @@ bizz.de
 bk.ru
 blader.com
 boardermail.com
+boou.de
 bossmail.de
 brainsurfer.de
 brazilmail.com
@@ -661,6 +662,7 @@ qq.com.cn
 qq.com.hk
 qualityservice.com
 radiologist.net
+rakers.net
 ravemail.co.za
 ravemail.com
 realtyagent.com
@@ -1041,3 +1043,4 @@ zohomail.com
 zohomail.de
 zohomail.eu
 zu-geil.de
+zuzo.de

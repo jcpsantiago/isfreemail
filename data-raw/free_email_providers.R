@@ -34,9 +34,13 @@ burner_email_provider_domains <- readLines(
   "https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt"
 )
 
+extra_burner <- c(
+  "txen.de", "wsym.de", "vevs.de", "xrap.de", "skyrt.de", "eeedv.de"
+)
+
 burner_emails <- data.frame(
   type = "burner",
-  domain = burner_email_provider_domains
+  domain = c(burner_email_provider_domains, extra_burner)
 )
 
 free_email_providers <- rbind(free_emails, burner_emails)
