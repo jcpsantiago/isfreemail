@@ -24,25 +24,27 @@ free_emails <- data.frame(
   domain = free_email_providers_domains
 )
 
-writeLines(
-  unique(free_providers[order(free_providers)]),
-  here::here("data-raw/free_email_providers_domains.txt")
-)
-
 
 burner_email_provider_domains <- readLines(
   "https://raw.githubusercontent.com/wesbos/burner-email-providers/master/emails.txt"
 )
 
-extra_burner <- c(
-  "txen.de", "wsym.de", "vevs.de", "xrap.de", "skyrt.de", "eeedv.de"
-)
-
 burner_emails <- data.frame(
   type = "burner",
-  domain = c(burner_email_provider_domains, extra_burner)
+  domain = unique(c(burner_email_provider_domains, extra_burner, b))
 )
 
+all_providers <- unique(
+  c(free_email_providers_domains, burner_email_provider_domains)
+)
+
+all_providers <- all_providers[order(all_providers)]
+
 free_email_providers <- rbind(free_emails, burner_emails)
+
+writeLines(
+  all_providers,
+  here::here("data-raw/free_email_providers_domains.txt")
+)
 
 usethis::use_data(free_email_providers, overwrite = TRUE, internal = TRUE)
