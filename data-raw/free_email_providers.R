@@ -31,7 +31,7 @@ burner_email_provider_domains <- readLines(
 
 burner_emails <- data.frame(
   type = "burner",
-  domain = unique(c(burner_email_provider_domains, extra_burner, b))
+  domain = unique(c(burner_email_provider_domains))
 )
 
 all_providers <- unique(
