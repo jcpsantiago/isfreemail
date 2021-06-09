@@ -40,12 +40,24 @@ extract_email_domain <- function(email) {
 #' @examples
 #' is_free_email("foo@gmail.com") # TRUE
 #' is_free_email("foo@myownservermeh.com") # FALSE
-is_free_email <- function(email, include_burner = TRUE) {
+is_free_email <- function(email, include_burner = TRUE, include_toxic = TRUE) {
   stopifnot(is_valid_email(email))
 
   if (isFALSE(include_burner)) {
     free_email_providers <- free_email_providers[
       free_email_providers$type != "burner",
+    ]
+  }
+
+  if (isFALSE(include_toxic)) {
+    free_email_providers <- free_email_providers[
+      free_email_providers$type != "toxic",
+    ]
+  }
+
+  if (isFALSE(include_burner) & isFALSE(include_toxic)) {
+    free_email_providers <- free_email_providers[
+      !(free_email_providers$type %in% c("burner", "toxic"))
     ]
   }
 
