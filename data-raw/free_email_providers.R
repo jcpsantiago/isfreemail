@@ -48,9 +48,9 @@ all_providers <- unique(
 
 all_providers <- all_providers[order(all_providers)]
 
-free_email_providers <- Reduce(
-  rbind, c(free_emails, burner_emails),
-  toxic_emails
+free_email_providers <- do.call(
+  "rbind",
+  list(free_emails, burner_emails, toxic_emails)
 )
 
 free_email_providers <- free_email_providers[free_email_providers$type %in% c("burner", "free non-burner", "toxic"), ]
