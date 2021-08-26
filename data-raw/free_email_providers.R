@@ -6,9 +6,9 @@
 arnt_freemail <- readLines("https://raw.githubusercontent.com/arnt/freemail/master/freemail.txt")
 stopforumspam_domains <- readLines("https://www.stopforumspam.com/downloads/toxic_domains_whole.txt")
 
-free_email_providers_domains <- readLines(
+free_email_providers_domains <- c(readLines(
   here::here("data-raw/free_email_providers_domains.txt")
-)
+), "email.gmx")
 
 # These are not necessarily offering email accounts explicitly in their
 # webpage, but they were used in illegal activities
@@ -24,7 +24,7 @@ free_providers <- unique(
 
 free_emails <- data.frame(
   type = "free non-burner",
-  domain = free_email_providers_domains
+  domain = c(free_email_providers_domains, "duck.com", "info.net")
 )
 
 
