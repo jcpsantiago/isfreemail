@@ -8,7 +8,7 @@ stopforumspam_domains <- readLines("https://www.stopforumspam.com/downloads/toxi
 
 free_email_providers_domains <- c(readLines(
   here::here("data-raw/free_email_providers_domains.txt")
-), "email.gmx")
+), "email.gmx", "arcor.de")
 
 # These are not necessarily offering email accounts explicitly in their
 # webpage, but they were used in illegal activities
