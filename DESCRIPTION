@@ -1,6 +1,6 @@
 Package: isfreemail
 Title: Checks If An Email Is From A Free Provider
-Version: 0.0.25.9000
+Version: 0.0.26.9000
 Authors@R: 
     person(given = "João",
            family = "Santiago",
