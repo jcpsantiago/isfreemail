@@ -1,14 +1,15 @@
 ## code to prepare `free_email_providers` dataset goes here
-# free_email_providers_longlist <- readLines(
-#   "https://gist.githubusercontent.com/tbrianjones/5992856/raw/93213efb652749e226e69884d6c048e595c1280a/free_email_provider_domains.txt"
-#   )
+free_email_providers_longlist <- readLines(
+  "https://gist.githubusercontent.com/okutbay/5b4974b70673dfdcc21c517632c1f984/raw/78d2e23ef41fa1f9142fe77605f6f3f0afd5286d/free_email_provider_domains.txt"
+  )
 
 arnt_freemail <- readLines("https://raw.githubusercontent.com/arnt/freemail/master/freemail.txt")
-stopforumspam_domains <- readLines("https://www.stopforumspam.com/downloads/toxic_domains_whole.txt")
+# updated daily
+stopforumspam_domains <- readLines("https://www.stopforumspam.com/downloads/toxic_domains_whole_filtered_50000.txt")
 
 free_email_providers_domains <- c(readLines(
   here::here("data-raw/free_email_providers_domains.txt")
-), "email.gmx", "arcor.de")
+), "email.gmx", "arcor.de", "zohomail.eu", "internet.ru")
 
 # These are not necessarily offering email accounts explicitly in their
 # webpage, but they were used in illegal activities
@@ -19,12 +20,12 @@ shady_domains <- c(
 toxic_email_provider_domains <- unique(c(shady_domains, stopforumspam_domains))
 
 free_providers <- unique(
-  c(arnt_freemail, free_email_providers_domains)
+  c(arnt_freemail, free_email_providers_longlist, free_email_providers_domains)
 )
 
 free_emails <- data.frame(
   type = "free non-burner",
-  domain = c(free_email_providers_domains, "duck.com", "info.net")
+  domain = free_providers
 )
 
 
@@ -43,7 +44,7 @@ toxic_emails <- data.frame(
 )
 
 all_providers <- unique(
-  c(free_email_providers_domains, burner_email_provider_domains, toxic_email_provider_domains)
+  c(free_providers, burner_email_provider_domains, toxic_email_provider_domains)
 )
 
 all_providers <- all_providers[order(all_providers)]
